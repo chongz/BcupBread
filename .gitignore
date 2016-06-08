@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+.DS_Store 
+.settings
+*.iml
+.gradle
+*.class
+/target
+.idea
+
+=======
+*.class
+.DS_Store
+.settings
+*.iml
+.gradle
+/target
+.idea
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> 841cc4a094e97a7ec3d961eb2f01ec76801fd19b

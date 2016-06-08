@@ -1,0 +1,693 @@
+/* Delong.Yang 2016/5/31 */
+
+html,
+body {
+	position: relative;
+	height: 100%;
+	font-family: "微软雅黑" !important;
+}
+
+
+/* ************************ 公共 ************************ */
+
+.mui-content {
+	padding-bottom: 44px;
+}
+
+/*.mui-badge-danger, .mui-badge-red {
+	background-color: #BE3254;
+}*/
+
+.bg-self-adaption {
+	height: 100%;
+	background-attachment: fixed center center no-repeat;
+	background-size: cover;
+	margin: 0px 0px 0px 0px;
+}
+
+.bread-row {
+	margin: 15px 20px 15px 20px;
+}
+
+.bread-row-novertical {
+	margin: 0px 20px 0px 20px;
+}
+
+.bread-line {
+	background-color: #e6e6e6;
+	width: 100%;
+	height: 1px;
+}
+
+.cup-line-height-5 {
+	height: 5px;
+	width: 100%;
+	background: #e6e6e6;
+	overflow: hidden;
+}
+
+.cup-page-header {
+	font-size: 18px;
+	text-align: center;
+	line-height: 44px;
+}
+
+.cup-page-header-right {
+	font-size: 13px;
+	padding-right: 15px;
+}
+
+.cup-footer {
+	font-size: 14px;
+	height: 55px;
+	background-color: #e6e6e6;
+	line-height: 52px;
+	width: 100%;
+	position: fixed;
+	bottom: 44px;
+}
+
+.cup-footer-dark {
+	background-color: #e6e6e6;
+}
+
+.mui-checkbox input[type=checkbox]:checked:before,
+.mui-radio input[type=radio]:checked:before {
+	color: #e51b54;
+}
+
+.mui-input-row label,
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	font-family: "微软雅黑";
+}
+
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+	position: initial;
+}
+
+.bread-btn {
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	display: inline-block;
+	font-family: "微软雅黑";
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.bread-btn-black {
+	background-color: #010101;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	color: #FFFFFF;
+}
+
+
+.bread-btn-black:active {
+	background-color: #e6e6e6;
+	color: #010101;
+}
+
+.cup-btn {
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	display: inline-block;
+	font-family: "微软雅黑";
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.cup-btn-red {
+	background-color: #e51b54;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	color: #FFFFFF;
+}
+
+.cup-btn-red:active {
+	background-color: #ae0040;
+	color: #FFFFFF;
+}
+
+.cup-btn-white {
+	background-color: #FFFFFF;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	color: #010101;
+}
+
+.cup-btn-white:active {
+	background-color: #FFFFFF;
+	ilter: alpha(Opacity=100);
+	-moz-opacity: 1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+	color: #010101;
+}
+
+.cup-btn-white-quick-reg {
+	background-color: #FFFFFF;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	color: #BE3254;
+}
+
+.cup-btn-white-quick-reg:active {
+	background-color: #FFFFFF;
+	ilter: alpha(Opacity=100);
+	-moz-opacity: 1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+	color: #BE3254;
+}
+
+.cup-btn-white-loginreg {
+	background-color: #010101;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	color: #FFFFFF;
+}
+
+.cup-btn-white-loginreg:active {
+	background-color: #010101;
+	ilter: alpha(Opacity=100);
+	-moz-opacity: 1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+	color: #FFFFFF;
+}
+
+.cup-btn-disabled {
+	background-color: #b5b5b6;
+	color: #FFFFFF;
+}
+
+.cup-btn-disabled:active {
+	background-color: #b5b5b6;
+	color: #FFFFFF;
+}
+
+
+/* ************************ /.公共 ************************ */
+
+
+/* ************************ 导航 ************************ */
+
+.bread-nav {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	box-shadow: 0 0 0px !important;
+	background-color: #010101 !important;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+.bread-nav ul {
+	padding: 0 0 0 0px;
+	margin: 0 0 0 0px;
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+.bread-nav ul li {
+	float: left;
+	list-style: none;
+	width: 33.33%;
+	text-align: center;
+}
+
+.bread-nav img {
+	width: 25px;
+	padding-top: 12px;
+}
+
+
+/* 导航数字气泡 */
+
+.bread-nav span {
+	position: relative;
+	top: -15px;
+	left: -12px;
+}
+
+
+/* ************************ /.导航 ************************ */
+
+
+/* ************************ 首页  ************************ */
+
+.index-row {
+	margin: 20px 20px 20px 20px;
+}
+
+.index-menu {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: solid 1px #e6e6e6;
+	border-top: solid 1px #e6e6e6;
+}
+
+.index-menu a {
+	color: #000000;
+}
+
+.index-menu-icon {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.index-featured {}
+
+.index-featured img {
+	width: 100%;
+	/*height: 200px;*/
+}
+
+
+/* ************************ /.首页 ************************ */
+
+
+/* ************************ banner详细 ************************ */
+
+.announce-box {
+	line-height: 30px;
+}
+
+.announce-box img {
+	width: 100%;
+}
+
+.announce-icon {
+	width: 20px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+
+/* ************************ /.banner详细 ************************ */
+
+
+/* ************************ 分类 ************************ */
+
+.category-row {
+	margin: 0px 20px 5px 20px;
+}
+
+.category-title {
+	height: 40px;
+	line-height: 40px;
+}
+
+.category-title span {
+	font-weight: bold;
+}
+
+.category-nav {}
+
+.category-nav ul {
+	padding: 0 0 0 0px;
+	margin: 0 0 0 0px;
+	float: left;
+	width: 100%;
+	height: 44px;
+	border-bottom: solid 2px #e6e6e6;
+	border-top: solid 2px #e6e6e6;
+	color: #e6e6e6;
+}
+
+.category-nav ul li {
+	float: left;
+	list-style: none;
+	width: 20%;
+	text-align: center;
+	height: 44px;
+	line-height: 40px;
+}
+
+.category-nav ul li.active {
+	border-bottom: solid 2px #000000;
+	border-top: solid 2px #000000;
+	color: #000000;
+	position: relative;
+	line-height: 42px;
+	top: -2px
+}
+
+.category-body {
+	display: none;
+}
+
+.category-body-item {
+	margin-bottom: 20px;
+}
+
+.category-body-item p {
+	line-height: 40px;
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.category-body-item img {
+	width: 100%;
+}
+
+
+/* ************************ /.分类 ************************ */
+
+/* ************************ 面包详情 ************************ */
+.bread-detail-title-icon {
+	width: 28px;
+	margin-left: 10px;
+}
+
+.bread-detail-desc p {
+	line-height: 15px;
+	color: #000000;
+	font-size: 13px;
+}
+/* ************************ /.面包详情 ************************ */
+
+/* -------------------/购物车------------------- */
+
+
+/* 未登录或无内容DIV */
+
+.bg-nologin-nocontent {
+	margin-left: 7%;
+	margin-right: 7%;
+	background-color: #FFFFFF;
+	min-height: 100px;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 70px;
+	width: 86%;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	line-height: 35px;
+}
+
+.bg-nologin-nocontent a {
+	margin-top: 15px;
+}
+
+
+/* 购物车内容容器 */
+
+.sp-content-list-content {
+	background-color: #FFFFFF;
+	padding-bottom: 98px;
+}
+
+
+/* 购物车列表行 */
+
+.sp-row {
+	line-height: 100px;
+	font-size: 16px;
+}
+
+.sp-row img {
+	width: 65px;
+	vertical-align: middle;
+}
+
+
+/* 数量控件 */
+
+.sp-quantity-control {
+	background-color: #e6e6e6;
+	height: 25px;
+	width: 60%;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+	margin-top: 11px;
+	text-align: center;
+	display: inline-block;
+}
+
+.sp-quantity-control span:nth-child(2) {
+	position: relative;
+}
+
+
+/* -------------------/.购物车------------------- */
+
+/* -------------------我的页------------------- */
+
+.mypage-userinfo {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: #010101 !important;
+	filter: alpha(Opacity=90);
+	-moz-opacity: 0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	margin: 0px 0px 0px 0px;
+}
+
+
+/*消息*/
+
+.mypage-userinfo div:nth-child(1) {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 8%;
+}
+
+.mypage-userinfo div:nth-child(1) img {
+	width: 25px;
+}
+
+.mypage-userinfo div:nth-child(1) span {
+	position: relative;
+	top: -10px;
+	left: 41px;
+}
+
+
+/*头像*/
+
+.mypage-userinfo div:nth-child(2) img {
+	width: 20%;
+}
+
+
+/*用户名*/
+
+.mypage-userinfo div:nth-child(3) {
+	padding-top: 4%;
+	color: white;
+}
+
+.mypage-userinfo div:nth-child(3) span {
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+
+/*修改用户名图标*/
+
+.mypage-userinfo div:nth-child(3) img {
+	width: 20px;
+}
+
+
+/* 城市定位 */
+
+.mypage-userinfo div:nth-child(4) {
+	color: white;
+	padding-top: 4%;
+	padding-bottom: 8%;
+}
+
+
+/* 城市定位图标 */
+
+.mypage-userinfo div:nth-child(4) img {
+	width: 15px;
+	vertical-align: middle;
+}
+
+
+/* 列表菜单内容 */
+
+.mypage-list-content {
+	padding-left: 5%;
+}
+
+.mypage-list-content img {
+	vertical-align: middle;
+	width: 25px;
+	margin-right: 20px;
+}
+
+.mypage-loginout img {
+	vertical-align: middle;
+	margin-right: 0px;
+	width: 17px;
+}
+
+.mypage-loginout span {
+	font-size: 14px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+
+
+/* -------------------/.我的页------------------- */
+
+
+/* -------------------注册登录页------------------- */
+
+.login-content {
+	height: 100%;
+	background-image: url(../img/mine/bg-login.png);
+	background-attachment: fixed center center no-repeat;
+	background-size: cover;
+	margin: 0px 0px 0px 0px;
+	padding-bottom: 0px !important;
+}
+
+
+/* 注册登录页顶部返回关闭控件 */
+
+.login-top-bar div:nth-child(1) {
+	padding-top: 5%;
+	padding-left: 7%;
+}
+
+.login-top-bar div:nth-child(1) img {
+	width: 6%;
+}
+
+.login-top-bar div:nth-child(2) {
+	padding-top: 5%;
+	padding-right: 7%;
+}
+
+.login-top-bar div:nth-child(2) img {
+	width: 10%;
+}
+
+
+/* 文字说明信息 */
+
+.login-text-desc {
+	margin-top: 7%;
+	color: #FFFFFF;
+	padding-left: 20px;
+}
+
+
+/* 底部协议文字 */
+
+.login-protocol-text {
+	width: 100%;
+	position: absolute;
+	bottom: 5%;
+	color: #FFFFFF;
+	padding-left: 8%;
+	font-size: 12px;
+}
+
+
+/* 气泡背景 */
+
+.login-bubble {
+	width: 86%;
+	height: 100%;
+	position: relative;
+	margin-left: 7%;
+	background:rgba(255,255,255,0.8);
+	
+	padding: 6%;
+}
+
+/*.login-bubble:before,
+.login-bubble:after {
+	content: "";
+	display: block;
+	border-width: 20px;
+	position: absolute;
+	bottom: -40px;
+	left: 43%;
+	border-style: solid dashed dashed;
+	border-color: rgba(255,255,255,0.5)  transparent transparent;
+	font-size: 0;
+	line-height: 0;
+}*/
+
+
+
+
+/* 文本框 */
+
+.login-bubble input {
+	font-family: "微软雅黑";
+	padding-left: 20px !important;
+	padding-right: 25px !important;
+	font-size: 14px;
+	background-color: #FFFFFF;
+	border: 0px solid rgba(0,0,0,.2) !important;
+}
+.login-bubble p {
+	color: #B5B5B6;
+	font-size: 16px;
+}
+
+.input-box {
+	position: relative;
+}
+
+.input-text {
+	width: 100%;
+	padding: 0 90px 0 10px;
+	height: 26px;
+	border: 1px solid #E51B54;
+	box-sizing: border-box;
+}
+
+.input-box a {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	line-height: 40px;
+	vertical-align: middle;
+	color: #333333;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+
+/* -------------------/.注册登录页------------------- */
